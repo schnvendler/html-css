@@ -22,7 +22,7 @@ a{
     margin: 1px;
     background-color: var(--cor3);
     text-decoration: none;
-    font-size: small;
+    font-size: esmall;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.404);
     border-radius: 7px;
     transition-duration: 0.5s;
