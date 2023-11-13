@@ -1,0 +1,35 @@
+@font-face{
+    font-family: 'star';
+    src: url('Fontes/sf_distant_galaxy/SF\ Distant\ Galaxy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --cor1:#060606;
+    --cor2:#032838;
+    --cor3:#045A6B;
+    --cor4:#0A959C;
+    --cor5:#BDF2D9;
+}
+body{
+    background-image: url('Imagens/shutterstockSergey-Nivens_1093559528.jpg');
+    background-position: center top;
+
+}
+h1 {
+    font-family: 'star';
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+p {
+    background-color:#010a0ed0;
+    padding: 15px;
+    border-radius: 10px;
+    margin: auto;
+    width: 320px;
+    font-family: 'star';
+    text-align: center;
+    color: var(--cor5);
+}
