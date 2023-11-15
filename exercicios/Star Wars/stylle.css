@@ -12,9 +12,12 @@
     --cor5:#BDF2D9;
 }
 body{
-    background-image: url('Imagens/shutterstockSergey-Nivens_1093559528.jpg');
+    background-color: var(--cor1);
+    background-image: url('Imagens/uni1.jpg');
     background-position: center top;
-
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 h1 {
     font-family: 'star';
@@ -23,12 +26,48 @@ h1 {
     text-align: center;
     margin-top: 50px;
 }
-p {
+header {
+    position: relative;
+}
+main {
     background-color:#010a0ed0;
-    padding: 15px;
     border-radius: 10px;
     margin: auto;
-    width: 320px;
+    min-width: 320px;
+    max-width: 950px;
+}
+div.imagens {
+    height: 150px;
+    margin: 20px;
+    min-width: 300px;
+    max-width: 930px;
+    border: var(--cor4) solid 2px;
+    border-radius: 10px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+div#img1 {
+    background-image: url('Imagens/star-wars-dual-monitor-0e05x96fsbxni4jm.jpg');
+    background-position: center top;
+}
+div#img2 {
+    background-image: url('Imagens/_20210812_on_dysonsphere.jpg');
+    background-position: center top;
+}
+div#img3 {
+    background-image: url('Imagens/dark-darth-vader-star-wars-tablet-gp7se5myotp7mfhj.jpg');
+    background-position: center top;
+}
+p#yoda{
+    padding-bottom: 280px;
+}
+p#des {
+    font-family: 'star';
+    text-align: center;
+    color: var(--cor5);
+}
+p {
+    padding: 15px;
     font-family: 'star';
     text-align: center;
     color: var(--cor5);
