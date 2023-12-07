@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1>CADASTRO</h1>
+        <form action="cadastro.php" method="POST" autocomplete="on">
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" size="44" placeholder="Nome completo" autocomplete="name">
+            </p>
+            <p>
+                <label for="icel">Celular:</label>
+                <input type="tel" name="cel" id="icel" pattern="^\(\d{2}\)\d{5}-\d{4}$" required minlength="11" placeholder="(xx)xxxxx-xxxx" size="44" autocomplete="tel">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required minlength="10" placeholder="Seu e-mail" autocomplete="email" size="44">
+            </p>
+            <p>
+                <label for="iniver">Nascimento:</label>
+                <input type="date" name="niver" id="iniver" required autocomplete="off" size="44">
+            </p>
+            <p>
+                <label for="iusu" >Usuário:</label> 
+                <input type="text" name="usu" id="iusu" required minlength="3" maxlength="15" size="44" placeholder="nome de usuário ou e-mal" autocomplete="username">
+            </p>
+            <p>
+                <label for="isenha">Senha:</label> 
+                <input type="password" name="senha" id="isenha" required minlength="8" maxlength="17" size="44" placeholder="senha cadastrada de 8 a 17 #" autocomplete="current-password">
+            </p>
+            <p>
+                Sexo: <br>
+                <input type="radio" name="sexo" id="isxmas" value="M"><label id="check" for="isxmas">Masculino</label>
+                <input type="radio" name="sexo" id="isxfem" value="F"><label id="check" for="isxfem">Femenino</label>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+</body>
+</html>
